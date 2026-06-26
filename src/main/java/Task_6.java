@@ -7,8 +7,8 @@ public class Task_6 {
         int n = Integer.parseInt(sc.nextLine());
         String[] students = sc.nextLine().trim().split("\\s+");
 
-        ArrayList<Integer> badOdd = new ArrayList<>(1);
-        ArrayList<Integer> badEven = new ArrayList<>(1);
+        ArrayList<Integer> badOdd = new ArrayList<>();
+        ArrayList<Integer> badEven = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             int position = i + 1;
             int height = Integer.parseInt(students[i]);
