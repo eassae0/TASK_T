@@ -9,10 +9,10 @@ public class Task_5 {
 
         long length = 0;
         int count = 0;
-        long num = 0;
+        long num;
 
 
-        while (num <= right) {
+        for (int digitCount = 1; digitCount <= 18; digitCount++) {
             length = length * 10 + 1;
             for (int i = 1; i < 10; i++) {
                 num = length * i;
@@ -20,6 +20,6 @@ public class Task_5 {
             }
         }
         System.out.println(count);
-
+        sc.close();
     }
 }
