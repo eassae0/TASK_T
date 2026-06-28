@@ -34,8 +34,13 @@ public class Task_8 {
         double b = (x4 - x1)/Y;
         double e = (y4 - y1)/Y;
 
-        double y = (f - f * a + d * c)/(1 - a - e + e * a);
-        double x = (c + b * y)/(1 - a);
+        double D = a * e - b * d;
+
+        double Dx = (-c) * e - b * (-f);
+        double Dy = a * (-f) - (-c) * d;
+
+        double x = Dx / D;
+        double y = Dy / D;
 
         System.out.printf(Locale.US, "%.5f %.5f\n", x, y);
 
