@@ -11,9 +11,11 @@ public class Unoptimized_Task_11 {
 
         long summa = 0;
         for (int i = l; i <= r; i++) {
-            summa = (summa + Task_11.power(i, p-2, p)) % p;
+            summa = (summa + Task_11.power(i, p - 2, p)) % p;
         }
 
         System.out.println(summa);
+        sc.close();
     }
+
 }
