@@ -34,7 +34,7 @@ public class Task_10 {
         double L = xMin;
         double R = xMax;
 
-        for (int iteration = 0; iteration < 100; iteration++) {
+        for (int iteration = 0; iteration < 60; iteration++) {
             double x_mid = (L + R) / 2.0;
             double leftArea = 0;
 
